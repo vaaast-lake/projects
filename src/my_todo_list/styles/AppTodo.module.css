@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background: rgb(229,133,123);
+  background: linear-gradient(90deg, rgba(229,133,123,0.8832575266434699) 35%, rgba(224,139,131,0.7572071064754027) 80%);
+}
+
+.todo {
+  width: 45vw;
+  height: 70vh;
+  min-width: 300px;
+  min-height: 500px;
+  margin: 15vh auto;
+  border-radius: 20px;
+  background-color: #7d8bae;
+}

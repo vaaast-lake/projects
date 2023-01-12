@@ -1,0 +1,28 @@
+* {
+  font-size: calc(100% + 0.01vw);
+  font-weight: 600;
+  color: #e8ccc7;
+}
+
+.theme {
+  padding: 0 15px;
+  font-size: 25px;
+}
+
+.dataSet {
+  padding-right: 15px;
+}
+
+.add {
+  height: 90%;
+  padding: 0 15px;
+  margin: auto;
+  margin-left: 0;
+  border-radius: 0 8px 8px 0;
+  background-color: #e8ccc7;
+  color: white;
+}
+
+.delete {
+  font-size: 20px;
+}

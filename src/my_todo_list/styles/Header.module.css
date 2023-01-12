@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 3.5em;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 2px solid black;
+  background-color: #45496a;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}

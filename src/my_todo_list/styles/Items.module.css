@@ -1,0 +1,32 @@
+.items {
+  height: calc(100% - 7em);
+  padding: 10px;
+  overflow: scroll;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-size: calc(100% + 0.1vw);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 18px;
+}
+
+.name {
+  color: black;
+  padding-left: 5px;
+}

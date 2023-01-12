@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Banana",
+    "checked": false,
+    "key": "332523"
+  },
+
+  {
+    "name": "Strawberry",
+    "checked": false,
+    "key": "332563"
+  },
+  
+  {
+    "name": "Tomato",
+    "checked": false,
+    "key": "33252366"
+  }
+]
