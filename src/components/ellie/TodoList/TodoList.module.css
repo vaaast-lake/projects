@@ -1,0 +1,18 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.list {
+  /*felx-grow 만 1로 해도 되는데 왜...?
+    item이 늘어나면 아래로 길어지게 되는데, 그때 shrink가 작동하게 된다.
+  */
+  flex: 1 1 auto;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: auto; */
+  /* flex: auto; */
+  overflow-y: auto;
+}
