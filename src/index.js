@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppTodo from './AppTodo';
 import reportWebVitals from './reportWebVitals';
-import { DarkModeProvider } from './contexts/DarkModeContext';
+import AppTodo_e from './AppTodo_e';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DarkModeProvider>
-      <AppTodo />
-    </DarkModeProvider>
+    <AppTodo_e />
   </React.StrictMode>
 );
 
