@@ -3,11 +3,12 @@
 @tailwind utilities; */
 
 :root {
-  --color-bg-dart: #f5f5f5;
+  --color-bg-dark: #f5f5f5;
   --color-bg: #fdfffd;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
   --color-accent: #f16e03;
+  --color-white: white;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
   background: rgb(229,133,123);
   background: linear-gradient(90deg, rgba(229,133,123,0.8832575266434699) 35%, rgba(224,139,131,0.7572071064754027) 80%);
 }
@@ -30,7 +32,9 @@ body {
   width: 100%;
   height: 60%;
   max-width: 500px;
-  background-color: var(--color-bg-dart);
+  background-color: var(--color-bg-dark);
+  /* header에서 bg color를 넣으면 header가 드러나면서 border-radius가 묻힌다. 자식요소가 우선적으로 드러나기 때문에, overflow를 숨겨준다. */
+  overflow: hidden;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -44,7 +48,16 @@ code {
     monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
 }
