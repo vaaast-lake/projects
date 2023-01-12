@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:5.0.1"],\
             ["tailwindcss", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:3.2.4"],\
             ["use-immer", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:0.8.1"],\
+            ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -16246,6 +16247,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:5.0.1"],\
             ["tailwindcss", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:3.2.4"],\
             ["use-immer", "virtual:4035ed3cde02701c876eb13e9a2bcf560eadee8d7ecac86c151de2cce6c4189860b8ada50108ccd186c6116566b788c1788f5c1bc8cb1957a4c2a22913e7a485#npm:0.8.1"],\
+            ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
           "linkType": "SOFT"\
@@ -16675,6 +16677,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",\
           "packageDependencies": [\
             ["uuid", "npm:8.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:9.0.0", {\
+          "packageLocation": "./.yarn/cache/uuid-npm-9.0.0-46c41e3e43-8dd2c83c43.zip/node_modules/uuid/",\
+          "packageDependencies": [\
+            ["uuid", "npm:9.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\

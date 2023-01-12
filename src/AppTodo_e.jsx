@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import TodoList from './components/ellie_TodoList/TodoList';
+import React from 'react';
+import TodoList from './components/ellie/TodoList/TodoList';
 
 export default function AppTodo_e() {
 
