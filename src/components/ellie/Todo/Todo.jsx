@@ -1,23 +1,28 @@
 import React from 'react';
 import { FiTrash2 } from 'react-icons/fi';
 
-export default function Todo({ todos, deleteTodo }) {
+export default function Todo({ todo, onUpdate, onDelete  }) {
+
+  const { text, status, id } = todo;
+  const handleChange = (e) => {
+    const status = e.target.checked ? 'completed' : 'active';
+    onUpdate({ ...todo, status });
+  }
+  const handleDelete = () => onDelete(todo);
 
   return (
-    <ul>
-      {
-        todos.map(item => (
-          <li key={item.id}>
-            {item.text}
-            <button
-              id={item.id} 
-              onClick={deleteTodo}>
-              <FiTrash2 />
-            </button>
-          </li>
-        ))
-      }
-    </ul>
+    <li key={id}>
+      <input
+        type="checkbox" 
+        id='checkbox'                      
+        checked={status === 'completed'}
+        onChange={handleChange}
+      />
+      <label htmlFor='checkbox'>{text}</label>
+      <button onClick={handleDelete}>
+        <FiTrash2 />
+      </button>
+    </li>
   );
 }
 
