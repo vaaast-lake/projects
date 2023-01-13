@@ -1,18 +1,15 @@
 .container {
   height: 100%;
+  /*min-height: auto는 부모의 100%. 요소가 적을 때는 height*/
+  min-height: 0;
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg);
 }
 
 .list {
-  /*felx-grow 만 1로 해도 되는데 왜...?
-    item이 늘어나면 아래로 길어지게 되는데, 그때 shrink가 작동하게 된다.
+  /*basic을 기준으로 felx-grow 는 부모가 커졌을 때 작용하고 flex-shrink는 부모가 작아졌을 때 작용한다. 
   */
   flex: 1 1 auto;
-  /* flex-grow: 1; */
-  /* flex-shrink: 1; */
-  /* flex-basis: auto; */
-  /* flex: auto; */
   overflow-y: auto;
 }
