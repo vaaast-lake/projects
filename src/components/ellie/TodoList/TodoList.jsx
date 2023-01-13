@@ -23,6 +23,7 @@ export default function TodoList({ filter }) {
   const filtered = getFilteredItems(todos, filter);
 
   return (
+    <section className={styles.container}>
       <ul className={styles.list}>
         {
           filtered.map(item => (
