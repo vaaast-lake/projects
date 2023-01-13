@@ -32,6 +32,7 @@
 }
 
 .button {
+  font-size: 15px;
   color: var(--color-text);
   background-color: transparent;
 }

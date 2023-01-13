@@ -9,7 +9,10 @@
   --color-text: #22243b;
   --color-accent: #f16e03;
   --color-white: white;
+  --color-black: black;
   --color-scrollbar: #aaa7a7;
+  --color-dark-mode-bg: #7d8bae;
+  --color-dark-mode-bg-dark: #45496a;
 }
 
 body {
