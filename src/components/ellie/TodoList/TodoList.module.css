@@ -7,10 +7,6 @@
   background-color: var(--color-bg);
 }
 
-.container.dark {
-  background-color: var(--color-dark-mode-bg);
-}
-
 .list {
   /*basic을 기준으로 felx-grow 는 부모가 커졌을 때 작용하고 flex-shrink는 부모가 작아졌을 때 작용한다. 
   */

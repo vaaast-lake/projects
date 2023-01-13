@@ -1,11 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styles from './AddTodo.module.css'
-import {DarkModeContext} from '../../../contexts/ellie/DarkModeProvider'
 
 export default function AddTodo({ onAdd }) {
   const [text, setText] = useState('');
-  const {darkMode} = useContext(DarkModeContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,7 +22,7 @@ export default function AddTodo({ onAdd }) {
 
   return (
     <form 
-      className={`${styles.form} ${darkMode === 'dark' && styles.dark}`} 
+      className={styles.form} 
       onSubmit={handleSubmit}
     >
       <input 

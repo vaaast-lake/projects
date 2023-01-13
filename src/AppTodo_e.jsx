@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/ellie/Header/Header';
 import TodoList from './components/ellie/TodoList/TodoList';
-import {DarkModeProvider} from './contexts/ellie/DarkModeProvider';
+import {DarkModeProvider} from './contexts/ellie/DarkModeContext';
 
 const filters = ['all', 'active', 'completed']
 

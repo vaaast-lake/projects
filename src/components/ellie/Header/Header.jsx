@@ -1,19 +1,20 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from './Header.module.css'
 import {FiSun, FiMoon} from 'react-icons/fi'
-import {DarkModeContext} from '../../../contexts/ellie/DarkModeProvider'
+import { useDarkMode} from '../../../contexts/ellie/DarkModeContext'
 
 export default function Header({ filters, filter, onFilterChange }) {
 
-  const {darkMode, toggleDarkMode} = useContext(DarkModeContext)
+  const {darkMode, toggleDarkMode} = useDarkMode();
 
   return (
-    <header className={`${styles.header} ${darkMode === 'dark' && styles.dark}`}>
+    <header className={styles.header}>
       <button
-        className={styles.button}
+        className={styles.toggle}
         onClick={toggleDarkMode}
       >
-        {darkMode === 'dark' ? <FiSun className={`${styles.icon} ${styles.dark}`}/> : <FiMoon className={`${styles.icon}`}/>}
+        {!darkMode && <FiMoon />} 
+        {darkMode && <FiSun />}
       </button>
       <ul className={styles.filters}>
         {filters.map((value, index) => 

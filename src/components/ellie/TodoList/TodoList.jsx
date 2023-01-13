@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react';
-import { DarkModeContext } from '../../../contexts/ellie/DarkModeProvider';
+import React, { useState } from 'react';
 import AddTodo from '../AddTodo/AddTodo';
 import Todo from '../Todo/Todo';
 import styles from './TodoList.module.css'
@@ -10,7 +9,6 @@ export default function TodoList({ filter }) {
     { id: '124', text: '공부하기', status: 'active' },
   ]);
 
-  const {darkMode} = useContext(DarkModeContext);
 
   const handleAdd = (todo) => {
     setTodos(prev => [...prev, todo]);
@@ -25,7 +23,6 @@ export default function TodoList({ filter }) {
   const filtered = getFilteredItems(todos, filter);
 
   return (
-    <section className={`${styles.container} ${darkMode === 'dark' && styles.dark}`}>
       <ul className={styles.list}>
         {
           filtered.map(item => (
