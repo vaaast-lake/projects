@@ -4,21 +4,36 @@ import Todo from '../Todo/Todo';
 import styles from './TodoList.module.css'
 
 export default function TodoList({ filter }) {
-  const [todos, setTodos] = useState([
-    { id: '123', text: '장보기', status: 'active' },
-    { id: '124', text: '공부하기', status: 'active' },
-  ]);
-
+  const [todos, setTodos] = useState([]);
 
   const handleAdd = (todo) => {
     setTodos(prev => [...prev, todo]);
+    localStorage.setItem(todo.id, JSON.stringify(todo));
   }
   
-  const handleUpdate = (updated) => 
-    setTodos(todos.map(t => t.id === updated.id ? updated : t))
+  const handleUpdate = (updated) => {
+    setTodos(todos.map(t => t.id === updated.id ? updated : t));
+    localStorage.setItem(updated.id, JSON.stringify(updated));
+  }
   
-  const handleDelete = (deleted) => 
-    setTodos(todos.filter(t => t.id !== deleted.id))
+  const handleDelete = (deleted) => {
+    setTodos(todos.filter(t => t.id !== deleted.id));
+    localStorage.removeItem(deleted.id);
+  }
+
+  // function readTodosFromLocalStorage(todos) {
+  //   const items = [];
+  //   if(todos !== []) {
+  //     const ids = todos.map((todo) => todo.id);
+  //     ids.forEach((el) => {
+  //       items.push(localStorage[el]);
+  //       console.log(el);
+  //     });
+  //     return items;
+  //   } else {
+  //     return [];
+  //   }
+  // }
 
   const filtered = getFilteredItems(todos, filter);
 
